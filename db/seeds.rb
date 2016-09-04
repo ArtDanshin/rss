@@ -55,4 +55,7 @@ Course.all.each do |course|
   students.count.times do |n|
     CourseStudent.create(course: course, user: students[n])
   end
+
+  course.announce = Faker::Hacker.say_something_smart
+  course.sphere = 'Web developing'
 end
