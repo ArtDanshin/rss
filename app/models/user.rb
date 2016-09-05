@@ -6,4 +6,8 @@ class User < ActiveRecord::Base
   has_many :tags, through: :wants
 
   has_many :courses, foreign_key: :teacher_id
+
+  def name
+    [first_name, last_name].join(' ')
+  end
 end
