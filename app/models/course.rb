@@ -13,7 +13,7 @@ class Course < ActiveRecord::Base
   has_many :course_students
   has_many :students, through: :course_students, source: :user
 
-  scope :actual, -> { where("run_at IS NULL OR DATE_PART('days', run_at) >= DATE_PART('days', NOW())") }
+  scope :nearest, -> { where("run_at IS NULL OR DATE_PART('days', run_at) >= DATE_PART('days', NOW())") }
 
   def skills
     tags.pluck(:skill)

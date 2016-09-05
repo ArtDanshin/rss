@@ -3,10 +3,6 @@ module Api::V1
     # TODO: Change to current_user
     FAKE_USER_ID = 1
 
-    def index
-      @courses = process_courses(Course.actual)
-    end
-
     private
 
     def process_courses(courses)
