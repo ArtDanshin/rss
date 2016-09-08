@@ -1,0 +1,54 @@
+{
+  "name": "rambler-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "Use it for simple and fast web development",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/.bin/webpack-dev-server --progress --host 0.0.0.0",
+    "build": "rm -rf public/assets && NODE_ENV=production node_modules/.bin/webpack --progress --colors"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-register": "^6.11.6",
+    "css-loader": "^0.23.1",
+    "eslint-config-rambler": "^0.2.5",
+    "eslint-loader": "^1.5.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "glob": "^7.0.3",
+    "html-webpack-plugin": "^2.22.0",
+    "json-loader": "^0.5.4",
+    "lodash": "^4.15.0",
+    "manifest-revision-webpack-plugin": "0.3.0",
+    "npmlog": "^4.0.0",
+    "path": "^0.12.7",
+    "postcss-loader": "^0.10.1",
+    "pug": "^2.0.0-beta5",
+    "pug-loader": "^2.3.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.1",
+    "stylint": "^1.5.6",
+    "stylint-loader": "^1.0.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.3.1",
+    "url-loader": "0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15",
+    "webpack-svgstore-plugin": "^3.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rambler-digital-solutions/rambler-webpack-boilerplate"
+  },
+  "author": "Mike Chernobrov <m.chernobrov@rambler-co.ru> (http://rambler-co.ru)",
+  "license": "MIT",
+  "dependencies": {
+    "backbone": "1.3.3",
+    "fullpage.js": "2.8.2",
+    "jquery": "3.1.0",
+    "underscore": "1.8.3"
+  }
+}
