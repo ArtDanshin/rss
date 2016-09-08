@@ -4,4 +4,6 @@ Rails.application.routes.draw do
       resources :nearest_courses, only: [:index]
     end
   end
+
+  get '/auth', to: 'sessions#create'
 end

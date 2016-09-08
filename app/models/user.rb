@@ -10,4 +10,8 @@ class User < ActiveRecord::Base
   def name
     [first_name, last_name].join(' ')
   end
+
+  def self.authenticate(login, pass)
+    LdapAuthenticate::authenticate(login, pass)
+  end
 end
